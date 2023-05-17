@@ -2,10 +2,10 @@ class PromptopsCli < Formula
   include Language::Python::Virtualenv
   desc "Your CLI assistant. Ask questions, get shell commands."
   homepage "https://promptops.com"
-  url "https://promptops-public.s3.amazonaws.com/cli/bin/promptops-0.1.1.tar.gz"
-  sha256 "46b4a7f4a4fe9385c802b30465fe841d33f08974847192f3c5aa3f66e179ea1f"
+  url "https://promptops-public.s3.amazonaws.com/cli/bin/promptops-0.1.2.tar.gz"
+  sha256 "917d8bc412a61ecf3263bdaf52739cb37b073f8e004fc470059ebc23b03f287f"
   license ""
-  version "0.1.1"
+  version "0.1.2"
 
   depends_on "python@3.10"
   depends_on "numpy@1.24"
@@ -64,7 +64,6 @@ class PromptopsCli < Formula
     url "https://files.pythonhosted.org/packages/9d/67/68e568bb4a0617529db2723c75958223b70b95921cd114b5fd13567db4d8/websockets-11.0.2.tar.gz"
     sha256 "b1a69701eb98ed83dd099de4a686dc892c413d974fa31602bc00aca7cb988ac9"
   end
-
 
   def install
     virtualenv_install_with_resources
