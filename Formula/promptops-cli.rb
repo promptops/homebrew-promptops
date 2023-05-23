@@ -3,7 +3,7 @@ class PromptopsCli < Formula
   desc "Your CLI assistant. Ask questions, get shell commands."
   homepage "https://promptops.com"
   url "https://promptops-public.s3.amazonaws.com/cli/bin/promptops-0.1.2.tar.gz"
-  sha256 "917d8bc412a61ecf3263bdaf52739cb37b073f8e004fc470059ebc23b03f287f"
+  sha256 "d7450771178291256555d2256e7f7c770d05e7a3c5de1fcd543ca5f6b9e8dd96"
   license ""
   version "0.1.2"
 
@@ -63,6 +63,11 @@ class PromptopsCli < Formula
   resource "websockets" do
     url "https://files.pythonhosted.org/packages/9d/67/68e568bb4a0617529db2723c75958223b70b95921cd114b5fd13567db4d8/websockets-11.0.2.tar.gz"
     sha256 "b1a69701eb98ed83dd099de4a686dc892c413d974fa31602bc00aca7cb988ac9"
+  end
+
+  resource "pyperclip" do
+    url "https://files.pythonhosted.org/packages/a7/2c/4c64579f847bd5d539803c8b909e54ba087a79d01bb3aba433a95879a6c5/pyperclip-1.8.2.tar.gz"
+    sha256 "105254a8b04934f0bc84e9c24eb360a591aaf6535c9def5f29d92af107a9bf57"
   end
 
   def install
