@@ -3,7 +3,7 @@ class PromptopsCli < Formula
   desc "Your CLI assistant. Ask questions, get shell commands."
   homepage "https://promptops.com"
   url "https://promptops-public.s3.amazonaws.com/cli/bin/promptops-0.1.2.tar.gz"
-  sha256 "d7450771178291256555d2256e7f7c770d05e7a3c5de1fcd543ca5f6b9e8dd96"
+  sha256 "b49a51b7acda8fa3603b46a5b1af31e7006ced64104e8e39abb029d099f0d43d"
   license ""
   version "0.1.2"
 
@@ -68,6 +68,11 @@ class PromptopsCli < Formula
   resource "pyperclip" do
     url "https://files.pythonhosted.org/packages/a7/2c/4c64579f847bd5d539803c8b909e54ba087a79d01bb3aba433a95879a6c5/pyperclip-1.8.2.tar.gz"
     sha256 "105254a8b04934f0bc84e9c24eb360a591aaf6535c9def5f29d92af107a9bf57"
+  end
+
+  resource "psutil" do
+    url "https://files.pythonhosted.org/packages/d6/0f/96b7309212a926c1448366e9ce69b081ea79d63265bde33f11cc9cfc2c07/psutil-5.9.5.tar.gz"
+    sha256 "5410638e4df39c54d957fc51ce03048acd8e6d60abc0f5107af51e5fb566eb3c"
   end
 
   def install
