@@ -3,7 +3,7 @@ class PromptopsCli < Formula
   desc "Your CLI assistant. Ask questions, get shell commands."
   homepage "https://promptops.com"
   url "https://files.pythonhosted.org/packages/89/1a/9503e212120b054eaa473296a453d379038a4323cc5dd1add008ecc43134/promptops-0.1.5.tar.gz"
-  sha256 "594efc907f7d933eb2eed5ead1cf0d087f1d7df7"
+  sha256 "e41aab33c0f2800d668f03c541912c2e83da1b0ab63bf5e183fd00c87aad9053"
   license ""
   version "0.1.5"
 
