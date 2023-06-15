@@ -80,6 +80,7 @@ class PromptopsCli < Formula
     sha256 "6f7126db2f2c8a54212b05e3a740e45f4291c497d75d20751728f635bb74aa3d"
   end
 
+
   def install
     virtualenv_install_with_resources
   end
