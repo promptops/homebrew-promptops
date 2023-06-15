@@ -1,14 +1,14 @@
 class PromptopsCli < Formula
   include Language::Python::Virtualenv
-  desc "Your CLI assistant. Ask questions, get shell commands."
+  desc "Your CLI assistant. Ask questions, get shell commands"
   homepage "https://promptops.com"
   url "https://files.pythonhosted.org/packages/2c/6d/762a9281ffc63a61ed396e2ff8a5006f760a6a66e128444bbd1b24f6c0b4/promptops-0.1.7.tar.gz"
+  version "0.1.7"
   sha256 "903eb57eb9603a608428255e129aad257f6a0f0098e12b49dfb4b77570a70969"
   license ""
-  version "0.1.7"
 
-  depends_on "python@3.10"
   depends_on "numpy@1.24"
+  depends_on "python@3.10"
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/9d/ee/391076f5937f0a8cdf5e53b701ffc91753e87b07d66bae4a09aa671897bf/requests-2.28.2.tar.gz"
@@ -83,6 +83,11 @@ class PromptopsCli < Formula
 
   def install
     virtualenv_install_with_resources
+  end
+
+  bottle do
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura: "8380a83287f4a71a5dc117e3d4257a4db2a1854c9a4b85f3a829f6d616d7ba8b"
   end
 
   test do
