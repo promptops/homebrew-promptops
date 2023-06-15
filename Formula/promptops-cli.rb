@@ -3,9 +3,13 @@ class PromptopsCli < Formula
   desc "Your CLI assistant. Ask questions, get shell commands"
   homepage "https://promptops.com"
   url "https://files.pythonhosted.org/packages/2c/6d/762a9281ffc63a61ed396e2ff8a5006f760a6a66e128444bbd1b24f6c0b4/promptops-0.1.7.tar.gz"
-  version "0.1.7"
   sha256 "903eb57eb9603a608428255e129aad257f6a0f0098e12b49dfb4b77570a70969"
   license ""
+
+  bottle do
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura: "8380a83287f4a71a5dc117e3d4257a4db2a1854c9a4b85f3a829f6d616d7ba8b"
+  end
 
   depends_on "numpy@1.24"
   depends_on "python@3.10"
@@ -80,14 +84,8 @@ class PromptopsCli < Formula
     sha256 "6f7126db2f2c8a54212b05e3a740e45f4291c497d75d20751728f635bb74aa3d"
   end
 
-
   def install
     virtualenv_install_with_resources
-  end
-
-  bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, ventura: "8380a83287f4a71a5dc117e3d4257a4db2a1854c9a4b85f3a829f6d616d7ba8b"
   end
 
   test do
