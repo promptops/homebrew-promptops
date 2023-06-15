@@ -2,10 +2,10 @@ class PromptopsCli < Formula
   include Language::Python::Virtualenv
   desc "Your CLI assistant. Ask questions, get shell commands."
   homepage "https://promptops.com"
-  url "https://files.pythonhosted.org/packages/0a/ce/cc81f40239e0b0db2a9383f6b553ed9a3999a8f35d1b948104517e01b510/promptops-0.1.6.tar.gz"
-  sha256 "393eb6e76d6f2bd4312491a6452076c4828c11400e51df5c48e6231d6371f2b7"
+  url "https://files.pythonhosted.org/packages/2c/6d/762a9281ffc63a61ed396e2ff8a5006f760a6a66e128444bbd1b24f6c0b4/promptops-0.1.7.tar.gz"
+  sha256 "903eb57eb9603a608428255e129aad257f6a0f0098e12b49dfb4b77570a70969"
   license ""
-  version "0.1.6"
+  version "0.1.7"
 
   depends_on "python@3.10"
   depends_on "numpy@1.24"
