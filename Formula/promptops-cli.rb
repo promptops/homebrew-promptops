@@ -6,11 +6,6 @@ class PromptopsCli < Formula
   sha256 "903eb57eb9603a608428255e129aad257f6a0f0098e12b49dfb4b77570a70969"
   license ""
 
-  bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, ventura: "8380a83287f4a71a5dc117e3d4257a4db2a1854c9a4b85f3a829f6d616d7ba8b"
-  end
-
   depends_on "numpy@1.24"
   depends_on "python@3.10"
 
