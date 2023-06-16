@@ -6,6 +6,14 @@ class PromptopsCli < Formula
   sha256 "903eb57eb9603a608428255e129aad257f6a0f0098e12b49dfb4b77570a70969"
   license ""
 
+  bottle do
+    root_url "https://github.com/promptops/homebrew-promptops/releases/download/promptops-cli-0.1.7"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura:  "59f25939a8292409daf65d73ddb05ea1546222b430f10c4655f2fe661355a3f5"
+    sha256 cellar: :any_skip_relocation, monterey: "921a0ee87af5e807581be91b7896bf22d654e1c14d3cc0ec52e7a00f33cdccfd"
+    sha256 cellar: :any_skip_relocation, big_sur:  "dcf84f8220a7214d3b75fff740f6d644a5bdc8d9d2b0c4aabb8e0b75a1b6cdf9"
+  end
+
   depends_on "numpy@1.24"
   depends_on "python@3.10"
 
