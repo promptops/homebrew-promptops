@@ -87,6 +87,16 @@ class PromptopsCli < Formula
     sha256 "6f7126db2f2c8a54212b05e3a740e45f4291c497d75d20751728f635bb74aa3d"
   end
 
+  resource "levenshtein" do
+    url "https://files.pythonhosted.org/packages/c4/04/9179c510aec74ab84f3e6378526365b9fbe6d2a0d031ea178877c3bd5451/Levenshtein-0.21.1.tar.gz"
+    sha256 "2e4fc4522f9bf73c6ab4cedec834783999b247312ec9e3d1435a5424ad5bc908"
+  end
+
+  resource "rapidfuzz" do
+    url "https://files.pythonhosted.org/packages/85/b8/30109278e342bd1ce335aacafa8b295dbd34adc1a2b862a191f377cbba05/rapidfuzz-3.1.1.tar.gz"
+    sha256 "a06a08be3cb7d7df7993dd16e84aaf59bd5a7ff98a9f1b3e893d18b273a71c64"
+  end
+
   def install
     virtualenv_install_with_resources
   end
