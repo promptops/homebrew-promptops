@@ -7,11 +7,11 @@ class PromptopsCli < Formula
   license ""
 
   bottle do
-    root_url "https://github.com/promptops/homebrew-promptops/releases/download/promptops-cli-0.1.7"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, ventura:  "59f25939a8292409daf65d73ddb05ea1546222b430f10c4655f2fe661355a3f5"
-    sha256 cellar: :any_skip_relocation, monterey: "921a0ee87af5e807581be91b7896bf22d654e1c14d3cc0ec52e7a00f33cdccfd"
-    sha256 cellar: :any_skip_relocation, big_sur:  "dcf84f8220a7214d3b75fff740f6d644a5bdc8d9d2b0c4aabb8e0b75a1b6cdf9"
+    root_url "https://github.com/promptops/homebrew-promptops/releases/download/promptops-cli-0.1.10"
+    sha256 cellar: :any_skip_relocation, ventura:      "48b76e671c2bf6deccdfb0a2df727765e65dabe3f78e129663a5bb704db584e0"
+    sha256 cellar: :any_skip_relocation, monterey:     "00aab27fd80d5f8335b6a09e228ba1b223911553afa6fb2d6b246a91622935d3"
+    sha256 cellar: :any_skip_relocation, big_sur:      "eb4fd9f94649933d0859100ddefd45fc4ec0b6fd3ac7d201f52accb51d7d9452"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ca07edc03f37359a5e8cee581d8845d562ded931c8274c2f754bd491e603b01d"
   end
 
   depends_on "numpy@1.25"
