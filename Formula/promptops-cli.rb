@@ -2,8 +2,8 @@ class PromptopsCli < Formula
   include Language::Python::Virtualenv
   desc "Your CLI assistant. Ask questions, get shell commands"
   homepage "https://promptops.com"
-  url "https://files.pythonhosted.org/packages/d4/29/64af68a606c94a842579b6ec51948c0ca477afcb36cb4f94f3a96d2c7328/promptops-0.1.8.tar.gz"
-  sha256 "9c30cb00492b8ab9c552712aa9d264a5bcffc1af5b0c57778b976c8d3368283a"
+  url "https://files.pythonhosted.org/packages/f0/78/17e4081e8713ead51588f32a49e2f788852e6704dbdf300f9c5642a4e5c0/promptops-0.1.9.tar.gz"
+  sha256 "8aa25c35326a0e1552e355d109d95f0417239ca83c86959d4555393abb94416b"
   license ""
 
   bottle do
@@ -15,12 +15,7 @@ class PromptopsCli < Formula
   end
 
   depends_on "numpy@1.25"
-  depends_on "python@3.11"
-
-  resource "levenshtein" do
-    url "https://files.pythonhosted.org/packages/c4/04/9179c510aec74ab84f3e6378526365b9fbe6d2a0d031ea178877c3bd5451/Levenshtein-0.21.1.tar.gz"
-    sha256 "2e4fc4522f9bf73c6ab4cedec834783999b247312ec9e3d1435a5424ad5bc908"
-  end
+  depends_on "python@3.10"
 
   resource "colorama" do
     url "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz"
@@ -65,36 +60,6 @@ class PromptopsCli < Formula
   resource "wcwidth" do
     url "https://files.pythonhosted.org/packages/5e/5f/1e4bd82a9cc1f17b2c2361a2d876d4c38973a997003ba5eb400e8a932b6c/wcwidth-0.2.6.tar.gz"
     sha256 "a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"
-  end
-
-  resource "certifi" do
-    url "https://files.pythonhosted.org/packages/37/f7/2b1b0ec44fdc30a3d31dfebe52226be9ddc40cd6c0f34ffc8923ba423b69/certifi-2022.12.7.tar.gz"
-    sha256 "35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3"
-  end
-
-  resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/21/79/6372d8c0d0641b4072889f3ff84f279b738cd8595b64c8e0496d4e848122/urllib3-1.26.15.tar.gz"
-    sha256 "8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305"
-  end
-
-  resource "idna" do
-    url "https://files.pythonhosted.org/packages/8b/e1/43beb3d38dba6cb420cefa297822eac205a277ab43e5ba5d5c46faf96438/idna-3.4.tar.gz"
-    sha256 "814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"
-  end
-
-  resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz"
-    sha256 "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
-  end
-
-  resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz"
-    sha256 "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
-  end
-
-  resource "rapidfuzz" do
-    url "https://files.pythonhosted.org/packages/85/b8/30109278e342bd1ce335aacafa8b295dbd34adc1a2b862a191f377cbba05/rapidfuzz-3.1.1.tar.gz"
-    sha256 "a06a08be3cb7d7df7993dd16e84aaf59bd5a7ff98a9f1b3e893d18b273a71c64"
   end
 
   def install
