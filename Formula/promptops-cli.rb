@@ -17,6 +17,11 @@ class PromptopsCli < Formula
   depends_on "numpy@1.25"
   depends_on "python@3.10"
 
+  resource "levenshtein" do
+    url "https://files.pythonhosted.org/packages/c4/04/9179c510aec74ab84f3e6378526365b9fbe6d2a0d031ea178877c3bd5451/Levenshtein-0.21.1.tar.gz"
+    sha256 "2e4fc4522f9bf73c6ab4cedec834783999b247312ec9e3d1435a5424ad5bc908"
+  end
+
   resource "colorama" do
     url "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz"
     sha256 "08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"
@@ -55,11 +60,6 @@ class PromptopsCli < Formula
   resource "psutil" do
     url "https://files.pythonhosted.org/packages/d6/0f/96b7309212a926c1448366e9ce69b081ea79d63265bde33f11cc9cfc2c07/psutil-5.9.5.tar.gz"
     sha256 "5410638e4df39c54d957fc51ce03048acd8e6d60abc0f5107af51e5fb566eb3c"
-  end
-
-  resource "levenshtein" do
-    url "https://files.pythonhosted.org/packages/c4/04/9179c510aec74ab84f3e6378526365b9fbe6d2a0d031ea178877c3bd5451/Levenshtein-0.21.1.tar.gz"
-    sha256 "2e4fc4522f9bf73c6ab4cedec834783999b247312ec9e3d1435a5424ad5bc908"
   end
 
   resource "wcwidth" do
