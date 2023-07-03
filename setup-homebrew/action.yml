@@ -1,0 +1,30 @@
+name: Setup Homebrew
+description: Set up Homebrew environment
+author: dawidd6
+branding:
+  icon: settings
+  color: yellow
+inputs:
+  test-bot:
+    description: Install the `homebrew/test-bot` tap.
+    required: false
+    default: true
+  debug:
+    description: Show debugging output
+    required: false
+    default: ${{ runner.debug == '1' }}
+  token:
+    description: Token to be used for GitHub authentication (if using private repositories). This token will persist through other steps for the duration of the job.
+    required: false
+    default: ''
+outputs:
+  repository-path:
+    description: Path to where the repository has been checked out (if applicable)
+  gems-path:
+    description: Homebrew's Ruby gems path
+  gems-hash:
+    description: Homebrew's Ruby Gemfile.lock sha256sum
+runs:
+  using: node16
+  main: main.mjs
+  post: post.mjs

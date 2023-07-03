@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+        uses: promptops/homebrew-promptops/setup-homebrew@main
 
       - name: Set up git
         uses: Homebrew/actions/git-user-config@master
